@@ -32,20 +32,16 @@ public final class Main {
         int CUENTA_FIN = 10;
         
         //Variables
-        boolean bool =  RND.nextBoolean();
-        int numeroCuenta = 1;
+        boolean bool;
+        int numeroCuenta = CUENTA_INI;
         
         while(numeroCuenta <= 10){
             
+             bool =  RND.nextBoolean();
+             
             //Mensaje
             System.out.printf("Respuesta %d ...: %b%n", numeroCuenta, bool);
-            
-            //Condicion
-            if (bool == bool){
-                
-                bool =  RND.nextBoolean();
-            }
-            
+                                 
             //Actualización
             numeroCuenta++;
         }
